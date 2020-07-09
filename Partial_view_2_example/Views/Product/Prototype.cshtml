@@ -1,0 +1,27 @@
+﻿@model Partial_view_2_example.Models.Product
+
+<table width="400" border="2" align="center">
+    <tr>
+        <td>
+            <img src="@Url.Content(Model.Photo)" width="200" height="200"/>
+        </td>
+        <td>
+            <table frame="box" rules="all" align="center">
+                <tr>
+                    <td>Product ID </td>
+                    <td>@Model.ProductID</td>
+                </tr>
+                <tr>
+                    <td>Product Name</td>
+                    <td>@Model.Name</td>
+                </tr>
+                <tr>
+                    <td>Product Price</td>
+                    <td>@Model.Price</td>
+                </tr>
+
+            </table>
+        </td>
+    </tr>
+
+</table>
